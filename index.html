@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+    <!-- animation css cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -87,7 +89,7 @@
             <div class="left-design"></div>
             <div class="right-design"></div>
             <!-- design -->
-            <h1 class="section-header">Best House For You</h1>
+            <h1 class="section-header" data-aos="fade-right">Best House For You</h1>
             <hr class="horizontal-line">
                 <!-- card start  -->
                 <div class="card-main container">
@@ -278,7 +280,7 @@
         <!-- design -->
         <div class="bottom-design"></div>
         <!-- design -->
-        <h1 class="section-header">What Client Say</h1>
+        <h1 class="section-header" data-aos="fade-right">What Client Say</h1>
         <hr class="horizontal-line">
             <!-- card start  -->
             <div class="review-card-main container">
@@ -410,6 +412,15 @@
         id.style.background = "red";
         document.getElementById("navchild4").style.background = "#427A11";
     })
+    </script>
+    <!-- animation css javascript link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        AOS.init({
+            duration:2000,
+        });
+
     </script>
 </body>
 </html>

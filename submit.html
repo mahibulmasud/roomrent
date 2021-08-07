@@ -55,57 +55,103 @@
     <!-- banner section end -->
     </header>
 
-<!-- /form start/ -->
+<!-- / basic information form start/ -->
 <section class="form-section">
     <span class="basic-information">Basic Information</span>
-    <form class="form" action="" >
-        <div class="form-div">
-            <div class="input-container title-container">
-                <legend>Proparty Title</legend>
-                <input type="text" name="text" id="#">
-            </div>
-            <div class="bedbath">
-                <div class="input-container bedbath-container">
-                    <legend>Bedroom</legend>
+    <form action="" >
+        <div id="form-one">
+            <div class="form-div">
+                <div class="input-container title-container">
+                    <legend>Proparty Title</legend>
                     <input type="text" name="text" id="#">
                 </div>
-                <div class="input-container bedbath-container">
-                    <legend>Bathroom</legend>
+                <div class="bedbath">
+                    <div class="input-container bedbath-container">
+                        <legend>Bedroom</legend>
+                        <input type="text" name="text" id="#">
+                    </div>
+                    <div class="input-container bedbath-container">
+                        <legend>Bathroom</legend>
+                        <input type="text" name="text" id="#">
+                    </div>
+                </div>
+                <div class="input-container upload-container">
+                    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+                    <div class="file-upload">
+                    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+    
+                    <div class="image-upload-wrap">
+                        <input class="file-upload-input" id="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                        <div class="drag-text">
+                            <i class="fas fa-upload"></i>
+                            <legend class="upload-photo-text" id="upt">Drag or Upload your Photo</legend>
+                            <legend class="clean-photo" id="cp">Its must be a clean photo</legend>
+                        </div>
+                    </div>
+                    <div class="file-upload-content">
+                        <img class="file-upload-image" src="#" alt="your image" />
+                        <div class="image-title-wrap">
+                        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- ----------- -->
+                </div>
+                <div class="input-container">
+                    <legend>District</legend>
+                    <input type="text" name="text" id="#">
+                </div>
+                <div class="input-container">
+                    <legend>Thana</legend>
+                    <input type="text" name="text" id="#">
+                </div>
+                <div class="srh">
+                    <div class="input-container srh-container">
+                        <legend>Sector No <span class="optional">(optional)</span></legend>
+                        <input type="text" name="text" id="#">
+                    </div>
+                    <div class="input-container srh-container">
+                        <legend>Road No <span class="optional">(optional)</span></legend>
+                        <input type="text" name="text" id="#">
+                    </div>
+                    <div class="input-container srh-container">
+                        <legend>House No <span class="optional">(optional)</span></legend>
+                        <input type="text" name="text" id="#">
+                    </div>
+                </div>
+                <div class="input-container">
+                    <legend>Address</legend>
                     <input type="text" name="text" id="#">
                 </div>
             </div>
-            <div class="input-container upload-container">
-                <legend>Upload your Photo</legend>
-                <input type="file" name="image" id="#">
-            </div>
-            <div class="input-container">
-                <legend>District</legend>
-                <input type="text" name="text" id="#">
-            </div>
-            <div class="input-container">
-                <legend>Thana</legend>
-                <input type="text" name="text" id="#">
-            </div>
-            <div class="srh">
-                <div class="input-container srh-container">
-                    <legend>Sector No <span class="optional">(optional)</span></legend>
-                    <input type="text" name="text" id="#">
+            
+        </div>
+    </form>
+</section>
+
+<!-- /form end/ -->
+<!-- /Contact details form start/ -->
+<section class="form-section">
+    <span class="basic-information">Basic Information</span>
+    <form action="" >
+        <div id="form-one">
+            <div class="form-div">
+                <div class="srh">
+                    <div class="input-container srh-container">
+                        <input type="text" name="text" id="#" placeholder="Name">
+                    </div>
+                    <div class="input-container srh-container">
+                        <input type="text" name="text" id="#" placeholder="Email">
+                    </div>
+                    <div class="input-container srh-container">
+                        <input type="text" name="text" id="#" placeholder="Mobile No">
+                    </div>
                 </div>
-                <div class="input-container srh-container">
-                    <legend>Road No <span class="optional">(optional)</span></legend>
-                    <input type="text" name="text" id="#">
+                <div class="input-container">
+                   <textarea name="" id="" class="description-area" placeholder="Description"></textarea>
                 </div>
-                <div class="input-container srh-container">
-                    <legend>House No <span class="optional">(optional)</span></legend>
-                    <input type="text" name="text" id="#">
-                </div>
-            </div>
-            <div class="input-container">
-                <legend>Address</legend>
-                <input type="text" name="text" id="#">
             </div>
         </div>
-        
     </form>
 </section>
 
@@ -159,5 +205,50 @@
             </section>
         </footer>
     <!-- footer end -->
+
+    <!-- javascript for upload photo file-->
+<script>
+    document.getElementById("file-upload-input").addEventListener("mouseover",function(){
+        document.getElementById("upt").style.color="#fff";
+        document.getElementById("cp").style.color="#fff";
+    });
+    document.getElementById("file-upload-input").addEventListener("mouseout",function(){
+        document.getElementById("upt").style.color="#999999";
+        document.getElementById("cp").style.color="#999999";
+        
+    });
+        function readURL(input) {
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+            $('.image-upload-wrap').hide();
+
+            $('.file-upload-image').attr('src', e.target.result);
+            $('.file-upload-content').show();
+
+            $('.image-title').html(input.files[0].name);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+
+        } else {
+            removeUpload();
+        }
+        }
+
+        function removeUpload() {
+        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+        $('.file-upload-content').hide();
+        $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function () {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function () {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+</script>
 </body>
 </html>
