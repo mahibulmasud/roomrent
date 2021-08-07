@@ -1,0 +1,71 @@
+/* responsive part */
+/* max-width:1024px */
+@media only screen and (max-width:1024px){
+    .nav-main{
+        border-radius: 0;
+    }
+    .navchild4{
+        border-radius: 0;
+    }
+    .container{
+        width: 90%;
+        margin:0 auto;
+    }
+}
+/* max-width:768px */
+@media only screen and (max-width:768px){
+    
+    .nav-main{
+        height: 10vh;
+        border-radius: 0;
+    }
+    .navchild4{
+        border-radius: 0;
+    }
+    .navchild2 {
+        visibility: hidden;
+    }
+    .card-main {
+        grid-template-columns: 1fr 1fr;
+    }
+    .horizontal-line {
+        height: .6vh;
+        top: 7vh;
+    }
+    .top-footer{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+    .tf-three {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+    
+    }
+}
+/* max-width:600px */
+@media only screen and (max-width:600px){
+    .card-main {
+        grid-template-columns: 1fr;
+    }
+    .banner-overly h1 {
+        font-size: 10vw;
+    }
+    .section-header{
+        font-size: 7.5vw;
+    }
+    .banner-overly {
+        width: 80%;
+        top: 35vh;
+    }
+    .banner-overly p {
+        font-size: 3.3vw;
+    }
+    .top-footer{
+        grid-template-columns: 1fr;
+    }
+    
+    
+}
