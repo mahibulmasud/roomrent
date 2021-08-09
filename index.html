@@ -430,23 +430,21 @@
         dm = document.getElementById("navchild5-middle");
         db = document.getElementById("navchild5-bottom");
 
-    document.getElementById("navchild5").addEventListener("mouseover",function(){
+    document.getElementById("navchild5").addEventListener("click",function(){
         if(dt.style.transform === "rotate(0deg)"){
             dt.style.transform="rotate(45deg)";
-            dt.style.position="absolute";
-            dt.style.left="2.5vw";
+            dt.style.position="relative";
+            dt.style.top="4px";
             dm.style.display="none";
             db.style.transform="rotate(135deg)";
-            db.style.position="absolute";
-            db.style.left="2.5vw";
+            db.style.position="relative";
+            db.style.top="-4px";
         }else{
             dt.style.transform="rotate(0deg)";
             dt.style.position="static";
-            dt.style.left="2.5vw";
             dm.style.display="block";
             db.style.transform="rotate(0deg)";
             db.style.position="static";
-            db.style.left="2.5vw";
         }
     })
     </script>
