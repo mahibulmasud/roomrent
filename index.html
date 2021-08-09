@@ -69,6 +69,11 @@
                             <span>Submit Ads</span>
                     </a>
                 </div>
+                <div class="navchild5" id="navchild5">
+                    <div class="top" id="navchild5-top"></div>
+                    <div class="middle" id="navchild5-middle"></div>
+                    <div class="bottom" id="navchild5-bottom"></div>
+                </div>
             </div>
         </nav>
          <!-- navbar end -->
@@ -418,6 +423,32 @@
             duration:2000,
         });
 
+    </script>
+    <!-- animation icon js -->
+    <script>
+        dt = document.getElementById("navchild5-top");
+        dm = document.getElementById("navchild5-middle");
+        db = document.getElementById("navchild5-bottom");
+
+    document.getElementById("navchild5").addEventListener("mouseover",function(){
+        if(dt.style.transform === "rotate(0deg)"){
+            dt.style.transform="rotate(45deg)";
+            dt.style.position="absolute";
+            dt.style.left="2.5vw";
+            dm.style.display="none";
+            db.style.transform="rotate(135deg)";
+            db.style.position="absolute";
+            db.style.left="2.5vw";
+        }else{
+            dt.style.transform="rotate(0deg)";
+            dt.style.position="static";
+            dt.style.left="2.5vw";
+            dm.style.display="block";
+            db.style.transform="rotate(0deg)";
+            db.style.position="static";
+            db.style.left="2.5vw";
+        }
+    })
     </script>
 </body>
 </html>

@@ -40,8 +40,8 @@ body{
     background-color: rgba(0,24,77,.8);
 }
 /* top header start*/
-.top-header-main{
-    font-size: 1vw;
+.top-header-main {
+    font-size: 1.1vw;
     height: 6vh;
     display: grid;
     grid-template-columns: 9fr 0.8fr 0.8fr 1fr;
@@ -92,7 +92,7 @@ body{
     height: 14vh;
     border-radius: 5px;
     display: grid;
-    grid-template-columns: 1fr 3fr 0.3fr 1.5fr;
+    grid-template-columns: 1fr 3fr 0.4fr 1.5fr;
     align-items: center;
 }
 .navchild1 img {
@@ -175,6 +175,9 @@ body{
     top: -2vh;
     right: -1.9vw;
     z-index: 4;
+}
+.navchild5{
+    display: none;
 }
 /* nav */
 /* banner overly start */
@@ -362,8 +365,9 @@ body{
     border-radius: 0 0 0 229px;
 
 }
-.review-section{
+.review-section {
     position: relative;
+    bottom: 20px;
 }
 .section-header{
     font-size: 3.5vw;
@@ -821,42 +825,6 @@ footer::after{
     background: #fbfbfb;
     font-size: 18px;
 }
-/* responsive for submit page */
-@media only screen and (max-width: 768px) {
-    .srh .input-container{
-        margin-left: 20px;
-    }
-  }
- @media only screen and (max-width: 600px) {
-    .bedbath{
-        display: grid;
-    }
-    .bedbath-container{
-        width: 100%;
-    }
-    .bedbath .input-container{
-        margin-left:0px;
-    }
-    .srh{
-        display: grid;
-    }
-    .srh-container{
-        width:100%;
-    }
-    .srh .input-container{
-        margin-left: 0px;
-    }
-    .clean-photo{
-        font-size: 3.5vw;
-    }
-  }
-  @media only screen and (max-width: 600px) {
-    .image-upload-wrap {
-        padding: 20px 10px;
-        border: 2px dashed #1FB264;
-    }
-  }
-/* submit page design end */
 /* -------------------------------------- */
 /* registration page start */
 /* banner */

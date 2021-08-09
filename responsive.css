@@ -1,9 +1,6 @@
-/* responsive part */
+/* responsive design for index page */
 /* max-width:1024px */
 @media only screen and (max-width:1024px){
-    .nav-main{
-        border-radius: 0;
-    }
     .navchild4{
         border-radius: 0;
     }
@@ -14,13 +11,68 @@
 }
 /* max-width:768px */
 @media only screen and (max-width:768px){
-    
+    .top-header-main {
+        font-size: 1.5vw;
+        grid-template-columns: 9fr 0.9fr 0.9fr 1fr;
+    }
+    .banner-overly {
+        width: 63%;
+    }
     .nav-main{
-        height: 10vh;
+        height: 12vh;
         border-radius: 0;
+        grid-template-columns: 1fr 3fr 0.6fr 2.5fr 0.8fr;
+    }
+    .navchild5{
+        display: block;
+        display: grid;
+        justify-items: center;
+        position: relative;
+    }
+    .navchild5 .top, .middle, .bottom{
+        height: 2px;
+        width: 20px;
+        background-color: var(--main-color);
+    }
+    .navchild5 .top{
+        margin-bottom:4px;
+        transform: rotate(0deg);
+        position: static;
+        left: 0vw;
+        transition: all 0.5s;
+    }
+    .navchild5 .middle{
+        margin-bottom:4px;
+        display: block;
+        transition: all 0.5s;
+    }
+    .navchild5 .bottom{
+        transform: rotate(0deg);
+        position: static;
+        left: 0vw;
+        transition: all 0.5s;
+    }
+    /* icon animation start */
+    
+    /* icon animation end */
+    .navchild1 img {
+        margin-left: 3vw;
+        width: 24vw;
+    }
+    .fa-search {
+        font-size: 2vw;
+    }
+    .fa-plus{
+        top: -1.80vh;
+        font-size: 2vw;
+        padding: 1vw;
     }
     .navchild4{
         border-radius: 0;
+    }
+    .navchild4 span {
+        font-size: 2.1vw;
+        margin-left: 0px;
     }
     .navchild2 {
         visibility: hidden;
@@ -65,7 +117,43 @@
     }
     .top-footer{
         grid-template-columns: 1fr;
-    }
-    
-    
+    }   
 }
+/* responsive design for index page end */
+/* ------------------------------------ */
+/* responsive for submit page */
+@media only screen and (max-width: 768px) {
+    .srh .input-container{
+        margin-left: 20px;
+    }
+  }
+ @media only screen and (max-width: 600px) {
+    .bedbath{
+        display: grid;
+    }
+    .bedbath-container{
+        width: 100%;
+    }
+    .bedbath .input-container{
+        margin-left:0px;
+    }
+    .srh{
+        display: grid;
+    }
+    .srh-container{
+        width:100%;
+    }
+    .srh .input-container{
+        margin-left: 0px;
+    }
+    .clean-photo{
+        font-size: 3.5vw;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .image-upload-wrap {
+        padding: 20px 10px;
+        border: 2px dashed #1FB264;
+    }
+  }
+/* submit page design end */
