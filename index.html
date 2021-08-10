@@ -90,7 +90,7 @@
         </section>
         <!-- banner overlay start -->
             <div class="banner-overly">
-                <p>Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet,</p>
+                <p id="p">Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet,</p>
                 <div class="line"></div>
                 <h1>The Best Way To Find Your Perfect Home</h1>
             </div>
@@ -441,6 +441,27 @@
         db = document.getElementById("navchild5-bottom");
         dd = document.getElementsByClassName("dropdown");
 
+    // document.getElementById("navchild5").addEventListener("click",function(){
+    //     if(dt.style.transform === "rotate(0deg)"){
+    //         dt.style.transform="rotate(45deg)";
+    //         dt.style.position="relative";
+    //         dt.style.top="4px";
+    //         dm.style.display="none";
+    //         db.style.transform="rotate(135deg)";
+    //         db.style.position="relative";
+    //         db.style.top="-4px";
+    //         dd[0].style.display = "block";
+    //     }else{
+    //         dt.style.transform="rotate(0deg)";
+    //         dt.style.position="static";
+    //         dm.style.display="block";
+    //         db.style.transform="rotate(0deg)";
+    //         db.style.position="static";
+    //         dd[0].style.display="none";
+    //     }
+    // })
+    pa = document.getElementById("p");
+function myFunction(x) {
     document.getElementById("navchild5").addEventListener("click",function(){
         if(dt.style.transform === "rotate(0deg)"){
             dt.style.transform="rotate(45deg)";
@@ -450,9 +471,7 @@
             db.style.transform="rotate(135deg)";
             db.style.position="relative";
             db.style.top="-4px";
-                if (x) { // If media query matches
-                    dd[0].style.display = "block";
-                } 
+            dd[0].style.display = "block";
         }else{
             dt.style.transform="rotate(0deg)";
             dt.style.position="static";
@@ -462,8 +481,26 @@
             dd[0].style.display="none";
         }
     })
+    if (x.matches) { // If media query matches
+                // document.body.style.backgroundColor = "yellow";
+                // pa.style.color = "red";
+                dd[0].style.display = "none";
+            } else {
+            // document.body.style.backgroundColor = "pink";
+            // pa.style.color = "blue";
+            dd[0].style.display = "none";
+            dt.style.transform="rotate(0deg)";
+            dt.style.position="static";
+            dm.style.display="block";
+            db.style.transform="rotate(0deg)";
+            db.style.position="static";
+            dd[0].style.display="none";
+            }
+}
 
-        var x = window.matchMedia("(min-width: 769px)");
+var x = window.matchMedia("(min-width: 769px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
     </script>
 </body>
 </html>

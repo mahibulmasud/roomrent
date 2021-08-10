@@ -487,6 +487,7 @@ footer::after{
     border: 1px solid #ffffff3d;
     background: #ff000000;
     color: #fff;
+    width: 40%;
 }
 .tf-three input[type="text"]::placeholder{
     color: rgba(255, 255, 255, 0.863);
