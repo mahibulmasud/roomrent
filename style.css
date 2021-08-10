@@ -44,41 +44,46 @@ body{
     font-size: 1.1vw;
     height: 6vh;
     display: grid;
-    grid-template-columns: 9fr 0.8fr 0.8fr 1fr;
+    grid-template-columns: 9fr 1fr 1fr;
     justify-content: center;
     color: white;
 }
-.top1,.top4 table{
-    margin-top: 1.5vh;
+.top1{
+    display: grid;
+    align-items: center;
+    justify-content: start;
+}
+.top3{
+    display: grid;
+    align-items: center;
+}
+.top3>table{
+    margin-left: 10px;
 }
 .top1 table tr td{
     padding-left: 15px;
 }
-.top4 table{
-    float: right;
-}
-.top2,.top3{
-    display: grid;
+.top2{
+    display: flex;
     align-items: center;
 }
-.top3 a,.top2 a{
+.top2 .registration {
+    margin-right: 1vw;
+}
+.top2 .login {
+    margin-right: 1vw;
+}
+.top2::after{
+    content: "";
+    height: 80%;
+    color: black;
+    border: 1px solid white;
+}
+.top2 a{
     text-decoration: none;
     color: white;
 }
-.top3{
-    position: relative;
-}
-.login-line{
-    position: absolute;
-    top: 18px;
-    right: 0;
-    height: 1px;
-    width: 5vh;
-    background: white;
-    border: 0;
-    transform: rotate(90deg);
-}
-.top4 table tr td{
+.top1, .top3 table tr td{
     padding-right: 15px;
 }
 .fa-phone-volume{
