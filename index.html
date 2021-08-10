@@ -77,6 +77,14 @@
                     <div class="bottom" id="navchild5-bottom"></div>
                 </div>
             </div>
+            <div class="dropdown">
+                <ul>
+                    <li><a id="active" href="#">Home</a></li>
+                    <li><a href="property.html">Property</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
          <!-- navbar end -->
         </section>
@@ -431,6 +439,7 @@
         dt = document.getElementById("navchild5-top");
         dm = document.getElementById("navchild5-middle");
         db = document.getElementById("navchild5-bottom");
+        dd = document.getElementsByClassName("dropdown");
 
     document.getElementById("navchild5").addEventListener("click",function(){
         if(dt.style.transform === "rotate(0deg)"){
@@ -441,14 +450,20 @@
             db.style.transform="rotate(135deg)";
             db.style.position="relative";
             db.style.top="-4px";
+                if (x) { // If media query matches
+                    dd[0].style.display = "block";
+                } 
         }else{
             dt.style.transform="rotate(0deg)";
             dt.style.position="static";
             dm.style.display="block";
             db.style.transform="rotate(0deg)";
             db.style.position="static";
+            dd[0].style.display="none";
         }
     })
+
+        var x = window.matchMedia("(min-width: 769px)");
     </script>
 </body>
 </html>

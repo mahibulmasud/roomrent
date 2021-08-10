@@ -49,6 +49,30 @@
         left: 0vw;
         transition: all 0.5s;
     }
+    .banner-overlay{
+        z-index: 20;
+    }
+    .dropdown{
+        display: none;
+        position: relative;
+        background-color: var(--heading-color);
+        padding:0px 20px;
+        z-index: 300;
+    }
+    .dropdown ul{
+        list-style-type: none;
+    }
+    .dropdown ul li{
+        display: block;
+        text-align: left;
+        line-height: 30px;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    }
+    .dropdown ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
     /* icon animation start */
     
     /* icon animation end */
@@ -144,6 +168,9 @@
     .fa-search{
         position: relative;
         right: 30px;
+    }
+    .dropdown {
+        top: 55px;
     }
     .card-main {
         grid-template-columns: 1fr;

@@ -184,6 +184,9 @@ body{
 .navchild5{
     display: none;
 }
+.dropdown{
+    display: none;
+}
 /* nav */
 /* banner overly start */
 .banner-overly{
