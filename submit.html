@@ -41,6 +41,19 @@
                         <a href="submit.html"><span>Submit Ads</span></a>
                         <i class="fas fa-plus" id="fa-plus"></i>
                     </div>
+                    <div class="seocnd-navchild5" id="navchild5"><!-- for display 768px -->
+                            <div class="top" id="navchild5-top"></div>
+                            <div class="middle" id="navchild5-middle"></div>
+                            <div class="bottom" id="navchild5-bottom"></div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <ul>
+                        <li><a id="active" href="#">Home</a></li>
+                        <li><a href="property.html">Property</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
             </nav>
              <!-- navbar end -->
@@ -249,6 +262,50 @@
         $('.image-upload-wrap').bind('dragleave', function () {
             $('.image-upload-wrap').removeClass('image-dropping');
         });
-</script>
+    </script>
+    <!-- animation icon js -->
+    <script>
+        dt = document.getElementById("navchild5-top");
+        dm = document.getElementById("navchild5-middle");
+        db = document.getElementById("navchild5-bottom");
+        dd = document.getElementsByClassName("dropdown");
+        pa = document.getElementById("p");
+        function myFunction(x) {
+        document.getElementById("navchild5").addEventListener("click",function(){
+        if(dt.style.transform === "rotate(0deg)"){
+            dt.style.transform="rotate(45deg)";
+            dt.style.position="relative";
+            dt.style.top="4px";
+            dm.style.display="none";
+            db.style.transform="rotate(135deg)";
+            db.style.position="relative";
+            db.style.top="-4px";
+            dd[0].style.display = "block";
+        }else{
+            dt.style.transform="rotate(0deg)";
+            dt.style.position="static";
+            dm.style.display="block";
+            db.style.transform="rotate(0deg)";
+            db.style.position="static";
+            dd[0].style.display="none";
+        }
+    })
+    if (x.matches) { // If media query matches
+                dd[0].style.display = "none";
+            } else {
+            dd[0].style.display = "none";
+            dt.style.transform="rotate(0deg)";
+            dt.style.position="static";
+            dm.style.display="block";
+            db.style.transform="rotate(0deg)";
+            db.style.position="static";
+            dd[0].style.display="none";
+            }
+    }
+
+    var x = window.matchMedia("(min-width: 769px)")
+    myFunction(x)
+    x.addListener(myFunction)
+    </script>
 </body>
 </html>

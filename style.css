@@ -283,19 +283,9 @@ body{
     width: 281px;
     top: -50px;
     left: 0;
-    background-color: var(--design-color);
+    background-color: var(--heading-color);
     border-radius: 0 0 234px 0;
     z-index: -1;
-}
-.right-design{
-    position: absolute;
-}
-.section-header{
-    font-size: 3.5vw;
-    font-weight: 600;
-    margin: 50px auto;
-    text-align: center;
-    color: var(--heading-color);
 }
 .card-main{
     display: grid;
@@ -314,6 +304,7 @@ body{
     border-radius: 10px;
     transform:none;
     transition: transform 2s;
+    cursor: pointer;
 }
 .card-main>div:hover{
     transform: rotate3d(1, 1, 1,360deg);    
@@ -345,7 +336,7 @@ body{
 /* review start */
 /* scroll bar design */
 .review-card-main::-webkit-scrollbar {
-    height: 5px;
+    height: 10px;
   }
   
   /* Track */
@@ -369,7 +360,7 @@ body{
     width: 281px;
     top: -50px;
     right: 0;
-    background-color: var(--design-color);
+    background-color: var(--heading-color);
     border-radius: 0 0 0 229px;
 
 }
@@ -570,8 +561,8 @@ footer::after{
 .second-navchild4 {
     background: #5ba600;
     border-radius: 5px;
-    height: 58%;
-    width: 75%;
+    height: 60%;
+    width: 69%;
     display: flex;
     align-items: center;
     position: relative;
@@ -618,6 +609,9 @@ footer::after{
     position: static;
     left: 20px;
     background: #00800000;
+}
+.seocnd-navchild5{
+    display: none;
 }
 /* second nav end */
 /* submit page design start */

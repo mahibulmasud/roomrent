@@ -210,6 +210,69 @@
     }
 }
 /* responsive design for index page end */
+/* responsive design for second headder start */
+@media only screen and (max-width: 768px){
+    .second-nav-main {
+        grid-template-columns: 1fr 3fr 2fr 0fr;
+    }
+    .second-navchild3{
+        display: none;
+    }
+    .second-navchild4{
+        border-radius: 0;
+    }
+    .second-navchild4 .fa-plus{
+        display: none;
+    }
+    .seocnd-navchild5{
+        display: block;
+        margin: 0 auto;
+    }
+    .seocnd-navchild5 .top, .middle, .bottom {
+        height: 4px;
+        width: 30px;
+        background-color: var(--main-color);
+    }
+    .seocnd-navchild5 .top{
+        margin-bottom:5px;
+        transform: rotate(0deg);
+        position: static;
+        left: 0vw;
+        transition: all 0.5s;
+    }
+    .seocnd-navchild5 .middle{
+        margin-bottom:5px;
+        display: block;
+        transition: all 0.5s;
+    }
+    .seocnd-navchild5 .bottom{
+        transform: rotate(0deg);
+        position: static;
+        left: 0vw;
+        transition: all 0.5s;
+    }
+    .seocnd-navchild5{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .second-nav-main{
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    .second-navchild4 {
+        background:#1fb26400;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .second-navchild4 span {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .second-nav-main .navchild2{
+        display: none;
+    }
+}
+/* responsive design for second headder end */
 /* ------------------------------------ */
 /* responsive for submit page */
 @media only screen and (max-width: 768px) {
