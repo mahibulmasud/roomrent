@@ -62,7 +62,16 @@
                     </div>
                 </div>
                 <div class="navchild3">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search openBtn nav-search" onclick="openSearch()"></i>
+                    <div id="myOverlay" class="overlay">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                        <div class="overlay-content">
+                          <form action="">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                        </div>
+                    </div>
                     <a href="submit.html"><i class="fas fa-plus" id="fa-plus"></i></a>
                 </div>
                 <div class="navchild4" id="navchild4">
@@ -104,7 +113,7 @@
             <div class="left-design"></div>
             <div class="right-design"></div>
             <!-- design -->
-            <h1 class="section-header smd" data-aos="fade-right">Best House <span class="ads-header-snd">For You</span></span></h1>
+            <h1 class="section-header smd" data-aos="fade-right">Best House <span class="ads-header-snd">For You</span></h1>
             <hr class="horizontal-line">
                 <!-- card start  -->
                 <div class="card-main container">
@@ -403,7 +412,7 @@
                         <h1 class="newslatter">Newslatter</h1>
                         <p>Lorem ipsum dolor sit amet,</p>
                         <div class="subscribe-div">
-                            <input type="text" name="" id="#" placeholder="Your mail"><a href="#" class="subscribe">Subscribe</a>
+                            <input type="text" name="" id="#" placeholder="Your mail"><a href="#" class="subscribe"><span>Subscribe</span></a>
                         </div>
                     </div>
                     <div class="tf-four">
@@ -496,11 +505,22 @@ function myFunction(x) {
             db.style.position="static";
             dd[0].style.display="none";
             }
-}
+    }
 
-var x = window.matchMedia("(min-width: 769px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+        var x = window.matchMedia("(min-width: 769px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+    </script>
+
+    <!-- button overlay script -->
+    <script>
+        function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+        }
+        
+        function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
     </script>
 </body>
 </html>
