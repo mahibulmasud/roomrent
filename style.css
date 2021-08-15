@@ -1099,6 +1099,7 @@ footer::after{
         background-color: var(--main-color);
         display: flex;
         align-items: center;
+        border-radius: 10px;
     }
     .serach-bar-main div:nth-of-type(1) {flex-grow: 1;}
     .serach-bar-main div:nth-of-type(2) {flex-grow: 1;}
@@ -1128,6 +1129,16 @@ footer::after{
     .searchbar-child-three{
         display: flex;
         justify-content: center;
+    }
+    .custom-select select {
+        width: 150px;
+        height: 8vh;
+        border: 0;
+        border-radius: 21px;
+        padding: 0px 18px;
+    }
+    option{
+        padding: 10px 10px;
     }
 /* property page end */
 
