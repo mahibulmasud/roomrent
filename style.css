@@ -337,6 +337,9 @@ body{
 /* header design end */
 
 /* ads section start */
+.ads-section{
+    position: relative;
+}
 .left-design {
     position: absolute;
     height: 232px;
@@ -351,11 +354,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
-.card-main .img {
-    width: 100%;
-    height: 30vh;
-}
 .card-main>div{
+    position: relative;
     box-shadow: 0px 0px 8px -5px #3f51b5;
     padding: 10px;
     transition: box-shadow 1s;
@@ -363,10 +363,21 @@ body{
     transform:none;
     transition: transform 2s;
     cursor: pointer;
+    overflow: hidden;
 }
-.card-main>div:hover{
-    transform: rotate3d(1, 1, 1,360deg);    
-    box-shadow: 0px 0px 28px 0px #3f51b5;
+.card-main>div:hover img{
+    /* transform: rotate3d(1, 1, 1,360deg);     */
+    /* box-shadow: 0px 0px 28px 0px #3f51b5; */
+    height: 60%;
+
+}
+.card-main img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    /* visibility: hidden; */
+    transition: height 1s;
 }
 .card-price {
     position: absolute;
@@ -376,7 +387,16 @@ body{
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+    z-index: 4;
 }
+/* .card-content{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 1;
+} */
 .card-title {
     line-height: 10vh;
     font-size: 1.5em;
@@ -574,24 +594,6 @@ footer::after{
     z-index: 1;
     overflow: hidden;
 }
-/* .subscribe::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #427A11;
-    z-index: 2;
-    top: 0;
-    right: 100%;
-    transition: 1s right;
-}
-.subscribe:hover::before{
-    right: 0;
-}
-.subscribe span{
-    position: relative;
-    z-index: 2;
-} */
 .copyright-text{
     display: block;
     text-align: center;
@@ -902,10 +904,9 @@ footer::after{
 .input-container legend{
     margin: 10px 0px;
 }
-.input-container input[type=text]{
+.input-container input[type=text] {
     width: 100%;
     height: 50px;
-    border-radius: 5px !important;
     padding: 0 18px;
     border: 1px solid #f2f2f2;
     background: #fbfbfb;
