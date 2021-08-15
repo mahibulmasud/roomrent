@@ -500,6 +500,47 @@ body{
 }
 /* review end */
 /* footer start */
+.beforefooter-section{
+    background-color:#0C2654;
+    position: relative;
+    z-index: 5;
+}
+.before-footer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 15vh;
+}
+.before-footer>div{
+    display: flex;
+    align-items: center;
+}
+.bf-two{
+    justify-content: flex-end;
+}
+.bf-two table tr td{
+    padding-right:10px;
+}
+.bf-two table tr td:last-child{
+    padding-right:0px;
+}
+.footer-icon{
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+    width: 46px;
+    height: 47px;
+    display: inline-block;
+    text-align: center;
+    line-height: 47px;
+    background: rgba(169, 169, 169, 0.078);
+}
+.footer-icon:hover{
+    background: var(--main-color);
+}
 footer {
     position: relative;
     background-image: url(images/footer-background.png);

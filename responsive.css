@@ -240,6 +240,17 @@
     .banner-overly p {
         font-size: 3.3vw;
     }
+    /* responsive for footer 600px */
+    .before-footer {
+        grid-template-columns: 1fr;
+        height: 30vh;
+    }
+    .before-footer .bf-one{
+        margin: 0 auto;
+    }
+    .before-footer .bf-two{
+        margin: 0 auto;
+    }
     .top-footer .tf-one, .tf-two {
         grid-column: 1/3;
         padding-left: 35px;
