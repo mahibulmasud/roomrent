@@ -1183,3 +1183,96 @@ footer::after{
     }
 /* property page end */
 
+/* contact page start */
+.contact-div{
+    position: relative;
+}
+.contact-div:hover .contact-clip-one{
+    clip-path: polygon(0 0, 0 26%, 26% 0);
+}
+.contact-div:hover .contact-clip-two{
+    clip-path: polygon(0 0, 0 26%, 26% 0);
+}
+.contact-div:hover .touch-me{
+    display: none;
+}
+.contact-clip-one{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background-color: #061539;
+    transition: clip-path 3s;
+}
+.contact-clip-two {
+display: none;
+position: absolute;
+bottom: 0px;
+width: 100%;
+transform: rotate(180deg);
+height: 100%;
+clip-path: polygon(0 0, 0 100%, 100% 0);
+background-color: #061539;
+transition: clip-path 3s;
+}
+.touch-me{
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%);
+font-size: 40px;
+color: white;
+font-family: cursive;
+}
+.contact-section{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.cs-child-two h1 {
+font-weight: 600;
+font-size: 72px;
+text-align: center;
+color:#061539;
+font-family: cursive;
+}
+
+.cs-child-two h4 {
+font-family: 'Roboto', sans-serif, 'arial';
+font-weight: 400;
+font-size: 20px;
+color: #9b9b9b;
+line-height: 1.5;
+}
+.button{
+    color: #fff;
+    position: relative;
+    border: 0;
+    background-color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 10vh;
+    font-size: 20px;
+}
+.button::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 100%;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    background-color: #427A11;
+    transition: all 1s;
+    z-index: -1;
+
+}
+.button:hover::before{
+    right: 0;
+}
+/* contact page end */
+

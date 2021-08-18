@@ -13,6 +13,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
     <title>Document</title>
+    <style>
+.contact-inputfeild{
+    margin: 10px 0px;
+    position: relative;
+}
+.contact-inputfeild input[type=text] {
+    display: block;
+    width: 100%;
+    padding: 20px 27px;
+    font-size: 18px;
+    box-shadow: 1px 1px 1px 1px #0080007a;
+    border: 0;
+}
+.contact-inputfeild textarea{
+    padding: 20px 27px;
+    width: 100%;
+    font-size: 18px;
+    box-shadow: 1px 1px 1px 1px #0080007a;
+    border: 0;
+}
+.contact-inputfeild label{
+    position: absolute;
+    top:50%;
+    left: 50px;
+    transform: translate(-50%,-50%);
+    transition: all 0.3s;
+    pointer-events: none;
+    color: #999;
+}
+input:focus ~ label, input:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: 27%;
+    left: 8%;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+.textarea label{
+    position: absolute;
+    top:30px;
+    left: 60px;
+    transform: translate(-50%,-50%);
+    transition: all 0.3s;
+    pointer-events: none;
+    color: #999;
+}
+textarea:focus ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: 15px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+</style>
 </head>
 <body>
     <header>
@@ -72,13 +126,54 @@
 <div style="margin:50px"></div>
 <!-- // -->
 
+    <div class="contact-div">
+        <div class="contact-clip-one"></div>
+        <div class="contact-clip-two"></div>
+        <div class="contact-section container">
+            <div class="cs-child-one ">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_eBcQGa.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop autoplay></lottie-player>
+            </div>
+            <div class="cs-child-two">
+                <h1>Contact Us</h1>
+                <h4 style="text-align:center">We'd love to hear from you!</h4>
+                <form action="">
+                    <div class="contact-inputfeild">
+                        <input type="text" required>
+                        <label> Name</label>
+                    </div>
+                    <div class="contact-inputfeild">
+                        <input type="text" required>
+                        <label> Email</label>
+                    </div>
+                    <div class="contact-inputfeild">
+                        <input type="text" required>
+                        <label> Phone</label>
+                    </div>
+                    <div class="contact-inputfeild textarea">
+                        <textarea name="" id="" cols="100%" rows="10"></textarea>
+                        <label> Message</label>
+                    </div>
+                    <div class="contact-inputfeild">
+                        <button class="button">Send</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+   
+<!-- // -->
+<div style="margin:50px"></div>
+<!-- // -->
+
     <!-- footer start -->
         <footer>
             <!-- before footer -->
             <section class="beforefooter-section">
                 <div class="before-footer">
                     <div class="bf-one">
-                        <img src="images/logo.png" alt="">
+                        <img src="images/logo.png" alt="" >
                     </div>
                     <div class="bf-two">
                         <table>
