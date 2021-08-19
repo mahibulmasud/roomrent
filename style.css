@@ -518,6 +518,9 @@ body{
     display: flex;
     align-items: center;
 }
+.bf-one img{
+    width: 200px;
+}
 .bf-two{
     justify-content: flex-end;
 }
@@ -955,7 +958,7 @@ footer::after{
 /* -------------------------------------- */
 /* registration page start */
 /* banner */
-.registration-banner,.login-banner,.contact-banner,.submit-banner, .property-banner,.about-banner, .banner{
+.banner{
     height: 40vh;
     background-size: cover;
     background-blend-mode: overlay;
@@ -981,6 +984,9 @@ footer::after{
 }
 .submit-banner{
     background-image: url("images/banners/submitBanner.png");
+}
+.propertydetails-banner{
+    background-image: url("images/banners/propertydetailsBanner.png");
 }
 .banner-overlay{
     position: absolute;
@@ -1090,13 +1096,16 @@ footer::after{
         border-radius: 10px;
         outline: 0;
         border: 0;
-        border: 1px solid #3f51b5;
-        background: rgba(0, 0, 0, 0);
-        transition: background 1s;
-}
+        border: 0px;
+        background: rgb(6 21 57);
+        transition: all 0.5s;
+        z-index: 2;
+        box-shadow: 2px 0px 15px -9px white;
+    }
 .main-div input[type="submit"]:hover{
-    background-color: #313de5;
+    background-color: var(--main-color);
     color: white;
+    font-size: 22px;
     }
 .main-div .part-two{
     position: relative;
