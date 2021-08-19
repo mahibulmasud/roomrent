@@ -30,7 +30,15 @@ body{
     left: 50%;
     transform: translate(-50%);
 }
-#active{color: var(--main-color);}
+#active{
+    color: var(--main-color);
+    border-top: 1px solid #5ba600;
+    border-right: 1px solid #5ba600;
+    border-left: 3px solid #5ba600;
+    border-bottom: 3px solid #5ba600;
+    border-radius: 25px 22px 25px 0px;
+    box-shadow: -3px 3px 0px 0px white;
+}
 /* header design start */
 .header-background{
     height: 100vh;
