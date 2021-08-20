@@ -249,6 +249,9 @@
     .banner-overly p {
         font-size: 3.3vw;
     }
+    .second-navchild4 a::before {
+        display: none;
+    }
     /* responsive for footer 600px */
     .before-footer {
         grid-template-columns: 1fr;

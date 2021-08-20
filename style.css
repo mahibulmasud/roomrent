@@ -658,6 +658,17 @@ footer::after{
     padding: 13px 26px 15px 21px;
     text-decoration: none;
     color: #fff;
+    position: absolute;
+    border: 0;
+    background-color: var(--main-color);
+    /* width: 40%; */
+    z-index: 1;
+    overflow: hidden;
+}
+.Submit{
+    padding: 13px 26px 15px 21px;
+    text-decoration: none;
+    color: #fff;
     position: relative;
     border: 0;
     background-color: var(--main-color);
