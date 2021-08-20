@@ -658,7 +658,7 @@ footer::after{
     padding: 13px 26px 15px 21px;
     text-decoration: none;
     color: #fff;
-    position: absolute;
+    position: relative;
     border: 0;
     background-color: var(--main-color);
     /* width: 40%; */
