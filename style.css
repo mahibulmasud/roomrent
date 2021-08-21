@@ -13,6 +13,9 @@ body{
     width: 80%;
     margin:0 auto;
 }
+.txt-center{
+    text-align: center;
+}
 .space{
     margin:10vh;
 }
@@ -420,7 +423,7 @@ body{
     position: absolute;
     top: 20px;
     right: 20px;
-    background: #284887;
+    background: var(--heading-color);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -441,7 +444,7 @@ body{
 .card-footer {
     display: flex;
     justify-content: space-between;
-    background: #284887;
+    background: var(--heading-color);
     padding: 15px;
     color: white;
     border-radius: 3px;
@@ -1330,4 +1333,123 @@ line-height: 1.5;
     right: 0;
 }
 /* contact page end */
+
+/* property details page start */
+.pd-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 100px;
+    border-radius: 5px 5px 0px 0px;
+}
+.pd-childone-h1{
+    line-height: 40px;
+}
+.pd-childtwo-h1{
+    line-height: 40px;
+    text-align: end;
+}
+.pd-childtwo-p{
+    text-align: end;
+}
+.pd-sectionone{
+    background-color: #F5F6F7;
+}
+.pd-sectiontwo{
+    margin: 50px 0px;
+}
+.st-description{
+    line-height: 40px;
+    color: var(--heading-color);
+}
+.st-description-p {
+    line-height: 28px;
+    text-align: justify;
+    color: var(--paragraph-color);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.main-content-main{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    grid-gap: 20px 40px;
+}
+/*  */
+
+.seller-minipro-div{
+    display: grid;
+    background-color: #fff;
+    padding: 30px;
+}
+.seller-about-h3{
+    font-size: 25px;
+    /* border-left: 3px solid var(--main-color); */
+    /* padding-left: 10px; */
+    color: var(--heading-color);
+}
+.seller-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.seller-name{
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+.seller-description{
+    line-height: 25px;
+    margin-top: 10px;
+    color: var(--paragraph-color);
+}
+.comment-hr{
+    border: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+.comment-area{
+    background-color: var(--heading-color);
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+.comment-label{
+    text-transform: uppercase;
+    line-height: 50px;
+}
+.comment-input {
+    padding: 20px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #1b2a4f;
+    color: #9DA3BB;
+    resize: vertical;
+    width: 100%;
+}
+.comment-input::placeholder{
+    color: #9DA3BB;
+}
+.comment-text-area::placeholder{
+    color: #9DA3BB;
+    font-size: 18px;
+}
+.comment-submit-button{
+    padding: 20px;
+    background-color: var(--main-color);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.comment-name-email-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 40px;
+}
+/* property details page end */
 

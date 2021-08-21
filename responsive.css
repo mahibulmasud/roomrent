@@ -168,6 +168,22 @@
             padding: 0px 15px;
         }
     /* responsive design for property page */
+    /* responsive design for property details page */
+    .pd-main{
+        grid-template-columns: 1fr;
+    }
+    .pd-childtwo-h1{
+        text-align: start;
+    }
+    .pd-childtwo-p{
+        text-align: start;
+    }
+    .main-content-main{
+        grid-template-columns: 1fr;
+    }
+    .comment-name-email-main{
+        grid-template-columns: 1fr;
+    }
     /* responsive design for contact page */
     .contact-section{
         grid-template-columns: 1fr;
