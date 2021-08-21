@@ -263,6 +263,13 @@ body{
     color: white;
     border-radius: 0px 5px 5px 0px;
 }
+.overlay-search{
+    color: #fff;
+    font-size: 20px;
+}
+.overlay-search:hover{
+    color: #fff;
+}
 /* button overlay */
 .fa-plus {
     font-size: 1.5vw;
