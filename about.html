@@ -36,14 +36,14 @@
                     </div>
                     <div class="second-navchild3">
                         <i class="fas fa-search openBtn nav-search" onclick="openSearch()"></i>
-                        <div id="myOverlay" class="overlay">
-                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-                            <div class="overlay-content">
-                              <form action="">
-                                <input type="text" placeholder="Search.." name="search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                              </form>
-                            </div>
+                    <div id="myOverlay" class="overlay">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                        <div class="overlay-content">
+                          <form action="">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search overlay-search"></i></button>
+                          </form>
+                        </div>
                         </div>
                     </div>
                     <div class="second-navchild4" id="navchild4">
@@ -300,5 +300,15 @@
             })
         }
      </script>
+      <!-- button overlay script -->
+    <script>
+        function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+        }
+        
+        function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
 </body>
 </html>
